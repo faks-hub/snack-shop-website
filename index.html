@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Faks" />
+    <meta name="description" content="Gifty Yummy Snacks Website" />
+    <title>Gifty Yummy Snacks</title>
+    <link rel="icon" href="img/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <script src="js/main.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "rSAoGSvE9Iuvt9HNy",
+        });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Gifty Yummy Snacks</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2 class="hero__h2">Ekaabo!</h2>
+      <figure>
+        <img src="img/Meat Pie.jpeg" alt="Meat Pie" width="900" height="600" />
+        <figcaption class="offscreen">Meat Pie</figcaption>
+      </figure>
+    </section>
+
+    <main class="main">
+      <article id="menu" class="main__article menu">
+        <h2 class="menu__h2">Our Menu</h2>
+        <table class="menu__container">
+          <caption class="offscreen">
+            Our Snacks
+          </caption>
+          <thead>
+            <tr>
+              <th class="menu__header" scope="col">Snacks</th>
+              <th class="menu__header" scope="col">Quantity</th>
+              <th class="menu__header" scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="menu__item menu__mp" scope="row" rowspan="2">
+                Meat Pie
+              </th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">$1.50</td>
+            </tr>
+            <tr>
+              <td class="menu__item">2</td>
+              <td class="menu__item">$2.50</td>
+            </tr>
+
+            <tr>
+              <th class="menu__item menu__cp" scope="row" rowspan="2">
+                Chicken Pie
+              </th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">$2.00</td>
+            </tr>
+            <tr>
+              <td class="menu__item">2</td>
+              <td class="menu__item">$3.50</td>
+            </tr>
+            <tr>
+              <th class="menu__item menu__vp" scope="row" rowspan="2">
+                Vegetable Pie
+              </th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">$2.00</td>
+            </tr>
+            <tr>
+              <td class="menu__item">2</td>
+              <td class="menu__item">$3.50</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="menu__item menu__pf" colspan="3">
+                Puff Puff &amp; Fish Roll 2$
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <p class="center"><a href="#">Back to the top</a></p>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>
+        <span class="nowrap">&copy; <time id="year"></time></span>
+        <span class="nowrap"> Gummy Yummy Snacks</span>
+      </p>
+    </footer>
+  </body>
+</html>
